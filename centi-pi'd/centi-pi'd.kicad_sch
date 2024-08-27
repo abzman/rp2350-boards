@@ -5235,30 +5235,29 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_MEC_5E"
+		(symbol "SW_MEC_5E_1"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0.635 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
+			(property "Reference" "SW1"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Value" "BOOTSEL"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -5276,7 +5275,221 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*MEC*5G*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_MEC_5E_1_0_1"
+				(circle
+					(center -1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 3.81) (xy 2.286 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_MEC_5E_1_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_MEC_5E"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW2"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RESET"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -5392,10 +5605,30 @@
 						)
 					)
 				)
+			)
+			(symbol "SW_MEC_5E_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "2"
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5420,25 +5653,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6613,12 +6828,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92b085dc-79d2-4e7e-a88b-fe64e44759b0")
-	)
-	(junction
-		(at 240.03 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95885821-658a-4046-89b9-097d3681a3b1")
 	)
 	(junction
 		(at 69.85 50.8)
@@ -8140,7 +8349,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 46.99) (xy 236.22 46.99)
+			(xy 236.22 46.99) (xy 243.84 46.99)
 		)
 		(stroke
 			(width 0)
@@ -8197,16 +8406,6 @@
 			(type default)
 		)
 		(uuid "ff3298e8-8c30-4bc9-864e-a16c591eb8ac")
-	)
-	(wire
-		(pts
-			(xy 243.84 46.99) (xy 240.03 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff9c02a5-786e-48b5-afb8-4b7fb667ef62")
 	)
 	(rectangle
 		(start 44.45 166.37)
@@ -10929,7 +11128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 73.66 215.9 0)
 			(effects
 				(font
@@ -11129,7 +11328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 242.062 133.35 90)
 			(effects
 				(font
@@ -11264,7 +11463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "Evan's Kicad Library:SOIC127P600X175-8N"
 			(at 201.93 286.69 0)
 			(effects
 				(font
@@ -11469,7 +11668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 274.32 182.88 0)
 			(effects
 				(font
@@ -11536,7 +11735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Evan's Kicad Library:RP2350A_QFN-60_EP_7.75x7.75_Pitch0.4mm"
 			(at 123.19 73.66 0)
 			(effects
 				(font
@@ -11970,7 +12169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 179.07 48.26 0)
 			(effects
 				(font
@@ -12037,7 +12236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.322 185.42 90)
 			(effects
 				(font
@@ -12106,7 +12305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 199.39 0)
 			(effects
 				(font
@@ -12307,7 +12506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 251.1552 83.82 0)
 			(effects
 				(font
@@ -12376,7 +12575,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 296.8752 83.82 0)
 			(effects
 				(font
@@ -12642,7 +12841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 73.66 231.14 0)
 			(effects
 				(font
@@ -12840,7 +13039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 319.7352 83.82 0)
 			(effects
 				(font
@@ -13248,7 +13447,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P790X216-8N"
+		(property "Footprint" "Evan's Kicad Library:SOIC127P790X216-8N"
 			(at 335.28 286.69 0)
 			(effects
 				(font
@@ -13387,7 +13586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 82.2452 58.42 0)
 			(effects
 				(font
@@ -13457,7 +13656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 48.5648 109.22 0)
 			(effects
 				(font
@@ -13658,7 +13857,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 366.7252 199.39 0)
 			(effects
 				(font
@@ -13859,7 +14058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 308.3052 83.82 0)
 			(effects
 				(font
@@ -14058,7 +14257,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 251.46 46.99 0)
 			(effects
 				(font
@@ -14127,7 +14326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 73.66 208.28 0)
 			(effects
 				(font
@@ -14326,7 +14525,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 206.502 238.76 90)
 			(effects
 				(font
@@ -14369,6 +14568,7 @@
 		)
 	)
 	(symbol
+		(lib_name "SW_MEC_5E_1")
 		(lib_id "Switch:SW_MEC_5E")
 		(at 264.16 193.04 0)
 		(unit 1)
@@ -14427,10 +14627,10 @@
 		(pin "2"
 			(uuid "ad4b75e5-bc7b-4b07-aad5-bbfc3f5861c1")
 		)
-		(pin "3"
+		(pin "1"
 			(uuid "7f10613f-1ed3-46f8-a267-8c0de288a92b")
 		)
-		(pin "4"
+		(pin "2"
 			(uuid "a62a5cac-3228-46d9-969f-68d0b4cc8f9b")
 		)
 		(instances
@@ -14601,7 +14801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 262.382 140.97 90)
 			(effects
 				(font
@@ -14670,7 +14870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 239.7252 83.82 0)
 			(effects
 				(font
@@ -14739,7 +14939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 355.2952 199.39 0)
 			(effects
 				(font
@@ -14806,7 +15006,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 170.18 52.578 90)
 			(effects
 				(font
@@ -15140,7 +15340,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 214.122 129.54 90)
 			(effects
 				(font
@@ -15341,7 +15541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 47.9552 58.42 0)
 			(effects
 				(font
@@ -15410,7 +15610,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 262.5852 83.82 0)
 			(effects
 				(font
@@ -15480,7 +15680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 247.142 64.77 90)
 			(effects
 				(font
@@ -15523,72 +15723,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 262.89 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "851ea878-3372-4569-b591-73b1d5650dc6")
-		(property "Reference" "TP8"
-			(at 262.382 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Vin"
-			(at 263.652 45.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 262.89 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa4ab798-9a3f-4f89-a849-34ecac06dde6")
-		)
-		(instances
-			(project "centi-pi'd"
-				(path "/98d8419a-d8c3-4188-b5e0-c607e5a3f9d0"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 248.92 54.61 0)
 		(unit 1)
@@ -15616,7 +15750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 247.142 54.61 90)
 			(effects
 				(font
@@ -15686,7 +15820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 93.98 59.69 0)
 			(effects
 				(font
@@ -15753,7 +15887,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical"
 			(at 116.84 213.36 0)
 			(effects
 				(font
@@ -15874,7 +16008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECS1202033CKMTR"
+		(property "Footprint" "Evan's Kicad Library:ECS1202033CKMTR"
 			(at 80.01 193.98 0)
 			(effects
 				(font
@@ -16133,7 +16267,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 101.6 44.45 0)
 			(effects
 				(font
@@ -16200,7 +16334,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 214.122 137.16 90)
 			(effects
 				(font
@@ -16269,7 +16403,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 59.3852 58.42 0)
 			(effects
 				(font
@@ -16338,7 +16472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 285.4452 83.82 0)
 			(effects
 				(font
@@ -16439,10 +16573,10 @@
 		(pin "2"
 			(uuid "c885ae78-5099-491f-9d9c-50078ae7a1cc")
 		)
-		(pin "3"
+		(pin "2"
 			(uuid "2dc11867-f439-4cac-ba5f-0bcd556b60b9")
 		)
-		(pin "4"
+		(pin "1"
 			(uuid "63b65e0a-26f3-4a78-bfa6-94960fd2abed")
 		)
 		(instances
@@ -16547,7 +16681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 70.8152 58.42 0)
 			(effects
 				(font
@@ -16616,7 +16750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 245.11 83.82 0)
 			(effects
 				(font
@@ -16746,7 +16880,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 275.59 189.738 90)
 			(effects
 				(font
@@ -16816,7 +16950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 242.062 140.97 90)
 			(effects
 				(font
@@ -17151,7 +17285,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical"
 			(at 80.01 213.36 0)
 			(effects
 				(font
@@ -17339,7 +17473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_BM03B-SRSS-TBLFSN_JST"
+		(property "Footprint" "Evan's Kicad Library:CONN_BM03B-SRSS-TBLFSN_JST"
 			(at 92.71 121.412 0)
 			(effects
 				(font
@@ -17419,7 +17553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 73.66 223.52 0)
 			(effects
 				(font
@@ -17551,7 +17685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 155.9052 39.37 0)
 			(effects
 				(font
@@ -17621,7 +17755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 281.432 184.15 90)
 			(effects
 				(font
@@ -17756,7 +17890,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 88.5952 106.68 0)
 			(effects
 				(font
@@ -17825,7 +17959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 235.9152 144.78 0)
 			(effects
 				(font
@@ -18097,7 +18231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.9448 242.57 0)
 			(effects
 				(font
@@ -18167,7 +18301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 179.07 55.88 0)
 			(effects
 				(font
@@ -18440,7 +18574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 216.8652 148.59 0)
 			(effects
 				(font
@@ -18576,7 +18710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 263.8552 55.88 0)
 			(effects
 				(font
@@ -18645,7 +18779,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 274.0152 83.82 0)
 			(effects
 				(font
@@ -18779,7 +18913,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Evan's Kicad Library:TF-115YY-ACP9"
 			(at 181.61 239.268 0)
 			(effects
 				(font
@@ -18872,7 +19006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 166.0652 39.37 0)
 			(effects
 				(font
@@ -19071,7 +19205,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.98 97.028 90)
 			(effects
 				(font
@@ -19208,7 +19342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 287.9852 55.88 0)
 			(effects
 				(font
@@ -19342,7 +19476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 233.3752 199.39 0)
 			(effects
 				(font
@@ -19385,72 +19519,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 240.03 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fa31913f-e93e-437c-9aca-18632c0d3818")
-		(property "Reference" "TP9"
-			(at 241.554 42.672 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "USB_Pow"
-			(at 240.538 45.212 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.11 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 240.03 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c7d10786-1688-4a57-96af-8e498e1d00cd")
-		)
-		(instances
-			(project ""
-				(path "/98d8419a-d8c3-4188-b5e0-c607e5a3f9d0"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 170.18 53.34 90)
 		(mirror x)
@@ -19476,7 +19544,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 170.18 51.562 90)
 			(effects
 				(font
